@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { ImageSourcePropType, StyleSheet, FlatList, Platform, Pressable } from 'react-native';
 import { Image } from 'expo-image';
+import { useState } from 'react';
+import { FlatList, ImageSourcePropType, Platform, Pressable, StyleSheet } from 'react-native';
 
 type Props = {
   onSelect: (image: ImageSourcePropType) => void;
@@ -15,6 +15,7 @@ export default function EmojiList({ onSelect, onCloseModal }: Props) {
     require("../assets/images/emoji4.png"),
     require("../assets/images/emoji5.png"),
     require("../assets/images/emoji6.png"),
+    
   ]);
 
   return (
